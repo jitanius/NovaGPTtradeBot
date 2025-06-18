@@ -3,7 +3,7 @@ services:
     name: nova-gpt-trade
     env: python
     plan: free
-    buildCommand: ""
+    buildCommand: pip install -r requirements.txt
     startCommand: python main.py
     envVars:
       - key: BOT_TOKEN

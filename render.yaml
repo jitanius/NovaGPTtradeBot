@@ -2,9 +2,10 @@ services:
   - type: web
     name: nova-gpt-trade
     env: python
+    pythonVersion: 3.10
     plan: free
     buildCommand: pip install -r requirements.txt
     startCommand: python main.py
     envVars:
       - key: BOT_TOKEN
-        sync: false
+    sync: false

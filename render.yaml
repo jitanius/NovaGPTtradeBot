@@ -8,5 +8,6 @@ services:
     startCommand: python main.py
     envVars:
       - key: BOT_TOKEN
+      - key: RENDER_PYTHON_BUILD_STRATEGY
+        value: pip
     sync: false
-
